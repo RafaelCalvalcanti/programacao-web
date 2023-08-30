@@ -1,0 +1,27 @@
+let matriz = [
+    [1,2],
+    [3,4],
+    [5,6]
+];
+
+function imprimirMatriz(matriz){
+    for (i=0; i < matriz.length; i++) {
+        let imprimir = "|\t";
+        for (j = 0;j < matriz[i].length; j++){
+            imprimir+=matriz[i][j] + "\t";
+        }
+        imprimir += "|";
+        console.log(imprimir);
+    }
+}
+function imprimirTransposta(matriz) {
+    for(j=0;j < matriz[0].length;j++) {
+        let imprimir = "|\t";
+        for(i=0;i < matriz.length;i++){
+            imprimir += matriz[i][j] + "|\t";
+        }
+        imprimir += "|";
+        console.log(imprimir);
+    }
+}
+
